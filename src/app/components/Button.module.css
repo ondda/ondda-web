@@ -1,11 +1,11 @@
 .button {
       /* Base styles */
   background-color: #EA3788;
-  color: #FFF; /* White */
+  color: #FEFEFE; /* White */
   font-family: var(--font-public-sans), sans-serif; /* A simple, bold font */
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
-  padding: 12px 48px;
+  padding: 12px 64px;
   border: 3px solid #2D313B;
   border-radius: 8px; /* Subtle rounded corners */
   cursor: pointer;

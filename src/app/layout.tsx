@@ -1,8 +1,16 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Baloo_Chettan_2, Public_Sans } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const balooChettan = Baloo_Chettan_2({
+    subsets: ['latin'],
+    variable: '--font-baloo-chettan',
+})
+
+const publicSans = Public_Sans({
+    subsets: ['latin'],
+    variable: '--font-public-sans',
+})
 
 export const metadata: Metadata = {
     title: 'Create Next App',
@@ -16,7 +24,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={inter.className}>{children}</body>
+            <body className={`${balooChettan.variable} ${publicSans.variable}`}>
+                {children}
+            </body>
         </html>
     )
 }

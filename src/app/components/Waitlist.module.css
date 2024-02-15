@@ -1,0 +1,4 @@
+.waitlist {
+    display: flex;
+    flex-direction: column;
+}

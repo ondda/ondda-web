@@ -26,6 +26,10 @@
     font-family: var(--font-public-sans), sans-serif;
 }
 
+.centerText {
+    text-align: center;
+}
+
 .formFontSize {
   font-size: 22px;
   font-weight: 600;

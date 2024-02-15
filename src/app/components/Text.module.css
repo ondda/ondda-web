@@ -1,0 +1,4 @@
+.neoText {
+    composes: textFontFamily from "css/utils.module.css";
+    color: #2D313B;
+}

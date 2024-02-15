@@ -7,6 +7,21 @@
   box-shadow: 3px 4px 1px rgba(0, 0, 0, 0.25);
 }
 
+/* can't compose on selectors... */
+.activeHideShadow:active {
+  transform: translate(3px, 3px);
+  box-shadow: none;
+}
+
+.focusHideShadow:focus {
+  transform: translate(3px, 3px);
+  box-shadow: none;
+}
+
+.textFontFamily {
+    font-family: var(--font-baloo-chettan), sans-serif;
+}
+
 .formFontFamily {
     font-family: var(--font-public-sans), sans-serif;
 }

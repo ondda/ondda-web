@@ -1,4 +1,4 @@
-.button {
+.neoButton {
   background-color: #EA3788;
   color: #FEFEFE; /* White */
   cursor: pointer;
@@ -11,8 +11,5 @@
     background-color: #fd4799;
   }
 
-  &:active {
-    transform: translate(3px, 3px);
-    box-shadow: none;
-  }
+  composes: roundedBorder boxShadow activeHideShadow formFontFamily formFontSize from "css/utils.module.css";
 }

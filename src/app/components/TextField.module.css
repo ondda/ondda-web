@@ -1,0 +1,16 @@
+
+.textField {
+    color: #2D313B;
+    padding: 12px 8px;
+    transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &::placeholder {
+        color: #2D313B40;
+    }
+
+    &:focus {
+        outline: none;
+        transform: translate(3px, 3px);
+        box-shadow: none;
+    }
+}

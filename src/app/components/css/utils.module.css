@@ -1,0 +1,17 @@
+.roundedBorder {
+  border: 3px solid #2D313B;
+  border-radius: 8px;
+}
+
+.boxShadow {
+  box-shadow: 3px 4px 1px rgba(0, 0, 0, 0.25);
+}
+
+.formFontFamily {
+    font-family: var(--font-public-sans), sans-serif;
+}
+
+.formFontSize {
+  font-size: 22px;
+  font-weight: 600;
+}

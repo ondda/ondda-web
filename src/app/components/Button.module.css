@@ -6,10 +6,9 @@
   padding: 1.2rem 0.8rem;
   transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  /* Hover & Active states */
-  &:hover {
-    background-color: #fd4799;
-  }
-
   composes: roundedBorder boxShadow activeHideShadow formFontFamily formFontSize from "css/utils.module.css";
+}
+
+.neoButton:hover {
+  background-color: #fd4799;
 }

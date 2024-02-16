@@ -7,13 +7,7 @@
   box-shadow: 3px 4px 1px rgba(0, 0, 0, 0.25);
 }
 
-/* can't compose on selectors... */
-.activeHideShadow:active {
-  transform: translate(3px, 3px);
-  box-shadow: none;
-}
-
-.focusHideShadow:focus {
+.activeHideShadow:active, .focusHideShadow:focus {
   transform: translate(3px, 3px);
   box-shadow: none;
 }

@@ -1,6 +1,6 @@
 .neoButton {
   background-color: var(--primary-main-color);
-  color: #FEFEFE; /* White */
+  color: var(--text-light-color);
   cursor: pointer;
 
   padding: 1.2rem 0.8rem;

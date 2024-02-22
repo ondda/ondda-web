@@ -1,5 +1,5 @@
 .neoText {
     composes: textFontFamily centerText from "css/utils.module.css";
-    color: #2D313B;
+    color: var(--text-dark-color);
     margin: 0px;
 }

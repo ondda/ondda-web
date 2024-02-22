@@ -1,5 +1,5 @@
 .neoButton {
-  background-color: #EA3788;
+  background-color: var(--primary-main-color);
   color: #FEFEFE; /* White */
   cursor: pointer;
 
@@ -10,5 +10,5 @@
 }
 
 .neoButton:hover {
-  background-color: #fd4799;
+  background-color: var(--primary-light-color);
 }

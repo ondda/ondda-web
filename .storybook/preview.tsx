@@ -1,6 +1,7 @@
 import type { Preview } from "@storybook/react";
 import { Baloo_Chettan_2, Public_Sans } from 'next/font/google'
 import React from "react";
+import '../src/app/globals.css';
 
 const balooChettan = Baloo_Chettan_2({
   subsets: ['latin'],

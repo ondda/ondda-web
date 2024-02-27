@@ -15,7 +15,7 @@ export const neoButton = style({
         backgroundColor: 'var(--primary-light-color)',
     },
     ':active': {
-        transform: 'translate(3px, 3px)',
+        translate: '3px 3px',
         boxShadow: 'none',
     },
 })

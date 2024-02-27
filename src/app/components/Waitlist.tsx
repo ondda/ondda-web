@@ -8,8 +8,9 @@ import Image from 'next/image'
 export const Waitlist = () => {
     return (
         <div
-            className="grid gap-y-12 md:grid-cols-2 [&_>_*]:col-span-1
-            md:[&_>_*]:col-start-2 md:[&_>_img]:col-start-1 md:[&_>_img]:row-span-2"
+            className="grid gap-y-12 md:grid-cols-2
+            [&_>_*]:col-span-1 md:[&_>_*]:col-start-2
+            md:[&_>_img]:col-start-1 md:[&_>_img]:row-span-2"
         >
             <Image
                 className={utils.marginAuto}

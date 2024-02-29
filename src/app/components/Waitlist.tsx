@@ -2,13 +2,13 @@ import { Button } from './Button'
 import { Heading } from './Heading'
 import { Text } from './Text'
 import { TextField } from './TextField'
-import styles from './Waitlist.module.css'
+import { waitlistGrid } from './Waitlist.css'
 import utils from './css/utils.module.css'
 import Image from 'next/image'
 
 export const Waitlist = () => {
     return (
-        <div className={styles.waitlist}>
+        <div className={waitlistGrid}>
             <Image
                 className={utils.marginAuto}
                 src={'star.svg'}

@@ -20,6 +20,7 @@ globalStyle(`${waitlistGrid} > *`, {
 })
 
 globalStyle(`${waitlistGrid} > img`, {
+    margin: 'auto',
     '@media': {
         'only screen and (min-width: 768px)': {
             rotate: '45deg',

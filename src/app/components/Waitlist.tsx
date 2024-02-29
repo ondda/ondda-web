@@ -3,14 +3,12 @@ import { Heading } from './Heading'
 import { Text } from './Text'
 import { TextField } from './TextField'
 import { waitlistGrid } from './Waitlist.css'
-import utils from './css/utils.module.css'
 import Image from 'next/image'
 
 export const Waitlist = () => {
     return (
         <div className={waitlistGrid}>
             <Image
-                className={utils.marginAuto}
                 src={'star.svg'}
                 alt={'star drawing'}
                 width={212}

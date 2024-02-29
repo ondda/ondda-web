@@ -1,9 +1,9 @@
-import style from './TextField.module.css'
+import { neoTextField } from './TextField.css'
 
 export const TextField = () => {
     return (
         <input
-            className={style.neoInput}
+            className={neoTextField}
             type="email"
             placeholder="ingresar email"
         ></input>

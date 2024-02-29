@@ -1,6 +1,0 @@
-.neoHeading {
-    composes: textFontFamily centerText from "css/utils.module.css";
-    color: var(--text-dark-color);
-    font-weight: lighter;
-    margin: 0px;
-}

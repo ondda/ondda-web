@@ -1,5 +1,5 @@
-import styles from './Heading.module.css'
+import { neoHeading } from './Heading.css'
 
 export const Heading = () => {
-    return <h2 className={styles.neoHeading}>lista de espera</h2>
+    return <h2 className={neoHeading}>lista de espera</h2>
 }

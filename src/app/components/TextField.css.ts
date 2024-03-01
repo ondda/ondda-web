@@ -1,4 +1,4 @@
-import { roundedBorder, addShadowHiddenOn } from '../theme/utils.css'
+import { roundedBorder, addShadowHiddenOn } from '../theme/common.css'
 import { globalVars } from '../theme/globals.css'
 import { style } from '@vanilla-extract/css'
 

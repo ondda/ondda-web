@@ -25,7 +25,7 @@ globalStyle(`${waitlistGrid} > img`, {
         'only screen and (min-width: 768px)': {
             rotate: '45deg',
             gridColumn: 1,
-            gridRow: '1 / span 2',
+            gridRow: '1 / span 3',
         },
     },
 })

@@ -3,7 +3,7 @@ import { style } from '@vanilla-extract/css'
 
 export const neoHeading = style({
     color: globalVars.color.gray,
-    fontFamily: globalVars.font.display.family,
+    fontFamily: globalVars.font.sans.family,
     fontWeight: 'lighter',
     textAlign: 'center',
     margin: 0,

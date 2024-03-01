@@ -9,7 +9,7 @@ export const neoTextField = style([
         // font
         fontSize: '2.2rem',
         fontWeight: 600,
-        fontFamily: globalVars.font.ui.family,
+        fontFamily: globalVars.font.sans.family,
         color: globalVars.color.gray,
         padding: '1.2rem 0.8rem',
         transition: globalVars.animation.transition,

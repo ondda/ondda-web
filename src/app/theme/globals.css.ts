@@ -19,11 +19,11 @@ export const globalVars = createGlobalTheme(':root', {
         lightGray: '#2D313B40',
     },
     font: {
-        ui: {
-            family: publicSans,
+        sans: {
+            family: `${publicSans}, sans-serif`,
         },
-        display: {
-            family: `${balooChettan}, sans-serif`,
+        logo: {
+            family: balooChettan,
         },
     },
     animation: {

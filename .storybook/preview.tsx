@@ -1,17 +1,5 @@
 import type { Preview } from "@storybook/react";
-import { Baloo_Chettan_2, Public_Sans } from 'next/font/google'
 import React from "react";
-import '../src/app/globals.css';
-
-const balooChettan = Baloo_Chettan_2({
-  subsets: ['latin'],
-  variable: '--font-baloo-chettan'
-})
-
-const publicSans = Public_Sans({
-    subsets: ['latin'],
-    variable: '--font-public-sans',
-})
 
 const preview: Preview = {
   parameters: {
@@ -25,7 +13,7 @@ const preview: Preview = {
   },
   decorators: [
     (Story) => (
-      <main className={`${balooChettan.variable} ${publicSans.variable}`}>
+      <main>
         <Story />
       </main>
     ),

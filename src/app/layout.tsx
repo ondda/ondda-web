@@ -1,16 +1,4 @@
 import type { Metadata } from 'next'
-import { Baloo_Chettan_2, Public_Sans } from 'next/font/google'
-import './globals.css'
-
-const balooChettan = Baloo_Chettan_2({
-    subsets: ['latin'],
-    variable: '--font-baloo-chettan',
-})
-
-const publicSans = Public_Sans({
-    subsets: ['latin'],
-    variable: '--font-public-sans',
-})
 
 export const metadata: Metadata = {
     title: 'Create Next App',
@@ -24,9 +12,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${balooChettan.variable} ${publicSans.variable}`}>
-                {children}
-            </body>
+            <body>{children}</body>
         </html>
     )
 }

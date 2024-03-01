@@ -5,6 +5,7 @@ export const neoButton = style({
     // font
     fontSize: '2.2rem',
     fontWeight: 600,
+    fontFamily: globalVars.font.ui.family,
     backgroundColor: globalVars.color.pink,
     color: globalVars.color.white,
     cursor: 'pointer',

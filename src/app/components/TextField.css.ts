@@ -5,6 +5,7 @@ export const neoTextField = style({
     // font
     fontSize: '2.2rem',
     fontWeight: 600,
+    fontFamily: globalVars.font.ui.family,
     color: globalVars.color.gray,
     padding: '1.2rem 0.8rem',
     transition: 'all 150ms cubic-bezier(0.4, 0, 0.2, 1)',

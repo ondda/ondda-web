@@ -1,4 +1,4 @@
-import { globalVars } from '../globals.css'
+import { globalVars } from '../theme/globals.css'
 import { style } from '@vanilla-extract/css'
 export const neoText = style({
     color: globalVars.color.gray,

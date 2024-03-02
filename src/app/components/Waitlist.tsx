@@ -6,7 +6,7 @@ import {
     onDesktopFirstColumn,
     onDesktopSecondColumn,
     onDesktopSpanTwoRows,
-    flexColumn,
+    flexDirectionColumn,
     waitlistGridOnDesktopTwoColumns,
     onDesktopRotate45Deg,
     alignSelfEnd,
@@ -43,7 +43,11 @@ export const Waitlist = () => {
                 width={212}
                 height={125}
             />
-            <div className={[onDesktopSecondColumn, flexColumn].join(' ')}>
+            <div
+                className={[onDesktopSecondColumn, flexDirectionColumn].join(
+                    ' '
+                )}
+            >
                 <Heading>lista de espera</Heading>
                 <Text>
                     Suscribite para más información y se de las primeras

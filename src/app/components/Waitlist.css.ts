@@ -14,7 +14,7 @@ globalStyle(`${waitlistGridOnDesktopTwoColumns} > img`, {
     margin: 'auto',
 })
 
-export const flexColumn = style({
+export const flexDirectionColumn = style({
     display: 'flex',
     flexDirection: 'column',
     rowGap: '3.2rem',

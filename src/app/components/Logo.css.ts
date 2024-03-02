@@ -4,6 +4,13 @@ import { style } from '@vanilla-extract/css'
 export const logoDisplay = style({
     display: 'flex',
     alignItems: 'center',
+    justifyContent: 'flex-start',
+    width: '100%',
+    '@media': {
+        'only screen and (min-width: 768px)': {
+            justifyContent: 'center',
+        },
+    },
 })
 
 export const logoFont = style({

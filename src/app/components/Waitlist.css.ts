@@ -1,6 +1,6 @@
 import { globalStyle, style } from '@vanilla-extract/css'
 
-export const waitlistGrid = style({
+export const waitlistGridOnDesktopTwoColumns = style({
     display: 'grid',
     rowGap: '3.2rem',
     '@media': {
@@ -10,8 +10,33 @@ export const waitlistGrid = style({
     },
 })
 
-globalStyle(`${waitlistGrid} > *`, {
-    gridColumn: 1,
+globalStyle(`${waitlistGridOnDesktopTwoColumns} > img`, {
+    margin: 'auto',
+})
+
+export const flexColumn = style({
+    display: 'flex',
+    flexDirection: 'column',
+    rowGap: '3.2rem',
+})
+
+export const onDesktopFirstColumn = style({
+    '@media': {
+        'only screen and (min-width: 768px)': {
+            gridColumn: 1,
+        },
+    },
+})
+
+export const onDesktopSpanTwoRows = style({
+    '@media': {
+        'only screen and (min-width: 768px)': {
+            gridRow: '1 / span 2',
+        },
+    },
+})
+
+export const onDesktopSecondColumn = style({
     '@media': {
         'only screen and (min-width: 768px)': {
             gridColumn: 2,
@@ -19,13 +44,14 @@ globalStyle(`${waitlistGrid} > *`, {
     },
 })
 
-globalStyle(`${waitlistGrid} > img`, {
-    margin: 'auto',
+export const onDesktopRotate45Deg = style({
     '@media': {
         'only screen and (min-width: 768px)': {
             rotate: '45deg',
-            gridColumn: 1,
-            gridRow: '1 / span 3',
         },
     },
+})
+
+export const alignSelfEnd = style({
+    alignSelf: 'end',
 })

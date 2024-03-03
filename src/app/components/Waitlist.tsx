@@ -7,7 +7,7 @@ import {
     onDesktopSecondColumn,
     onDesktopSpanTwoRows,
     flexDirectionColumn,
-    waitlistGridOnDesktopTwoColumns,
+    gridOnDesktopTwoColumns,
     onDesktopRotate45Deg,
     alignSelfEnd,
 } from './Waitlist.css'
@@ -15,7 +15,7 @@ import Image from 'next/image'
 
 export const Waitlist = () => {
     return (
-        <div className={waitlistGridOnDesktopTwoColumns}>
+        <div className={gridOnDesktopTwoColumns}>
             <div className={[onDesktopFirstColumn, alignSelfEnd].join(' ')}>
                 <Heading>conexión fuera de línea</Heading>
             </div>

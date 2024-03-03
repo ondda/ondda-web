@@ -1,6 +1,6 @@
 import { globalStyle, style } from '@vanilla-extract/css'
 
-export const waitlistGridOnDesktopTwoColumns = style({
+export const gridOnDesktopTwoColumns = style({
     display: 'grid',
     rowGap: '3.2rem',
     '@media': {
@@ -10,7 +10,7 @@ export const waitlistGridOnDesktopTwoColumns = style({
     },
 })
 
-globalStyle(`${waitlistGridOnDesktopTwoColumns} > img`, {
+globalStyle(`${gridOnDesktopTwoColumns} > img`, {
     margin: 'auto',
 })
 

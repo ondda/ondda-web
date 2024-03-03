@@ -6,5 +6,7 @@ export const main = style({
     alignItems: 'center',
     padding: '1.6rem',
     minHeight: '100vh',
+    maxWidth: '768px',
+    marginInline: 'auto',
     rowGap: '1.6rem',
 })

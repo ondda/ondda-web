@@ -1,4 +1,4 @@
-CREATE TABLE waitlist (
+CREATE TABLE waitlist_subscriber (
   id
     UUID DEFAULT gen_random_uuid() PRIMARY KEY,
   email

@@ -1,5 +1,5 @@
-import { globalVars } from '../theme/globals.css'
-import { style } from '@vanilla-extract/css'
+import { globalVars } from '../theme/globals.css';
+import { style } from '@vanilla-extract/css';
 
 export const neoHeading = style({
     color: globalVars.color.gray,
@@ -7,4 +7,4 @@ export const neoHeading = style({
     fontWeight: 200,
     textAlign: 'center',
     margin: 0,
-})
+});

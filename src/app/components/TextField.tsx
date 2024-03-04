@@ -1,4 +1,4 @@
-import { neoTextField } from './TextField.css'
+import { neoTextField } from './TextField.css';
 
 export const TextField = () => {
     return (
@@ -7,5 +7,5 @@ export const TextField = () => {
             type="email"
             placeholder="ingresar email"
         ></input>
-    )
-}
+    );
+};

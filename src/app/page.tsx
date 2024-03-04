@@ -1,6 +1,6 @@
-import { Logo } from './components/Logo'
-import { Waitlist } from './components/Waitlist'
-import { main } from './page.css'
+import { Logo } from './components/Logo';
+import { Waitlist } from './components/Waitlist';
+import { main } from './page.css';
 
 export default function Home() {
     return (
@@ -8,5 +8,5 @@ export default function Home() {
             <Logo />
             <Waitlist />
         </main>
-    )
+    );
 }

@@ -11,6 +11,7 @@ export async function PUT(
     { params }: { params: { email: string } }
 ) {
     const { email } = params;
+
     if (!isValidEmail(email)) {
         return new Response('Invalid email', { status: 400 });
     }
@@ -18,7 +19,7 @@ export async function PUT(
     try {
         await pool.query(
             'INSERT INTO waitlist_subscriber (email) VALUES ($1)',
-            [email]
+            [email.toLowerCase()]
         );
     } catch (err) {
         console.log(err);

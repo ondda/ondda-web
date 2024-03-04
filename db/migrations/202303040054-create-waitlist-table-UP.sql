@@ -1,4 +1,9 @@
 CREATE TABLE waitlist (
-  id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
-  email VARCHAR(255) UNIQUE CHECK (LOWER(email) = email)
+  id
+    UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+  email
+    VARCHAR(255)
+    NOT NULL
+    UNIQUE
+    CHECK (lower(email) = email)
 );

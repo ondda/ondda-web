@@ -24,6 +24,7 @@ export async function PUT(
         );
     } catch (error) {
         if (!isPgError(error) || error.code !== UNIQUE_VIOLATION) {
+            console.log(error);
             return new Response(null, { status: 500 });
         }
     }

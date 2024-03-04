@@ -1,4 +1,4 @@
-import { style } from '@vanilla-extract/css'
+import { style } from '@vanilla-extract/css';
 
 export const main = style({
     display: 'flex',
@@ -9,4 +9,4 @@ export const main = style({
     maxWidth: '768px',
     marginInline: 'auto',
     rowGap: '1.6rem',
-})
+});

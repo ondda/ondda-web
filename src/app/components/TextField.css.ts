@@ -1,6 +1,6 @@
-import { roundedBorder, addShadowHiddenOn } from '../theme/common.css'
-import { globalVars } from '../theme/globals.css'
-import { style } from '@vanilla-extract/css'
+import { roundedBorder, addShadowHiddenOn } from '../theme/common.css';
+import { globalVars } from '../theme/globals.css';
+import { style } from '@vanilla-extract/css';
 
 export const neoTextField = style([
     roundedBorder,
@@ -20,4 +20,4 @@ export const neoTextField = style([
             outline: 'none',
         },
     },
-])
+]);

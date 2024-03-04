@@ -1,7 +1,7 @@
-import { Button } from './Button'
-import { Heading } from './Heading'
-import { Text } from './Text'
-import { TextField } from './TextField'
+import { Button } from './Button';
+import { Heading } from './Heading';
+import { Text } from './Text';
+import { TextField } from './TextField';
 import {
     onDesktopFirstColumn,
     onDesktopSecondColumn,
@@ -10,8 +10,8 @@ import {
     gridOnDesktopTwoColumns,
     onDesktopRotate45Deg,
     alignSelfEnd,
-} from './Waitlist.css'
-import Image from 'next/image'
+} from './Waitlist.css';
+import Image from 'next/image';
 
 export const Waitlist = () => {
     return (
@@ -57,5 +57,5 @@ export const Waitlist = () => {
                 <Button />
             </div>
         </div>
-    )
-}
+    );
+};

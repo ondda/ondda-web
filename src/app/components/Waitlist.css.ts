@@ -1,4 +1,4 @@
-import { globalStyle, style } from '@vanilla-extract/css'
+import { globalStyle, style } from '@vanilla-extract/css';
 
 export const gridOnDesktopTwoColumns = style({
     display: 'grid',
@@ -8,17 +8,17 @@ export const gridOnDesktopTwoColumns = style({
             gridTemplateColumns: '1fr 1fr',
         },
     },
-})
+});
 
 globalStyle(`${gridOnDesktopTwoColumns} > img`, {
     margin: 'auto',
-})
+});
 
 export const flexDirectionColumn = style({
     display: 'flex',
     flexDirection: 'column',
     rowGap: '3.2rem',
-})
+});
 
 export const onDesktopFirstColumn = style({
     '@media': {
@@ -26,7 +26,7 @@ export const onDesktopFirstColumn = style({
             gridColumn: 1,
         },
     },
-})
+});
 
 export const onDesktopSpanTwoRows = style({
     '@media': {
@@ -34,7 +34,7 @@ export const onDesktopSpanTwoRows = style({
             gridRow: '1 / span 2',
         },
     },
-})
+});
 
 export const onDesktopSecondColumn = style({
     '@media': {
@@ -42,7 +42,7 @@ export const onDesktopSecondColumn = style({
             gridColumn: 2,
         },
     },
-})
+});
 
 export const onDesktopRotate45Deg = style({
     '@media': {
@@ -50,8 +50,8 @@ export const onDesktopRotate45Deg = style({
             rotate: '45deg',
         },
     },
-})
+});
 
 export const alignSelfEnd = style({
     alignSelf: 'end',
-})
+});

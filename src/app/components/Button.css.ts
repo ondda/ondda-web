@@ -1,6 +1,6 @@
-import { style } from '@vanilla-extract/css'
-import { globalVars } from '../theme/globals.css'
-import { roundedBorder, addShadowHiddenOn } from '../theme/common.css'
+import { style } from '@vanilla-extract/css';
+import { globalVars } from '../theme/globals.css';
+import { roundedBorder, addShadowHiddenOn } from '../theme/common.css';
 
 export const neoButton = style([
     roundedBorder,
@@ -19,4 +19,4 @@ export const neoButton = style([
             backgroundColor: globalVars.color.lightPink,
         },
     },
-])
+]);

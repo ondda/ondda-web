@@ -1,13 +1,14 @@
 import { Pool } from 'pg';
 
+const UNIQUE_VIOLATION = '23505';
+
 const pool = new Pool({
-    connectionString:
-        'postgresql://root@127.0.0.1:26257/defaultdb?sslmode=disable',
+    connectionString: process.env.DB_CONNECTION_URL,
     max: 1,
 });
 
 export async function PUT(
-    request: Request,
+    _request: Request,
     { params }: { params: { email: string } }
 ) {
     const { email } = params;
@@ -21,8 +22,10 @@ export async function PUT(
             'INSERT INTO waitlist_subscriber (email) VALUES ($1)',
             [email.toLowerCase()]
         );
-    } catch (err) {
-        console.log(err);
+    } catch (error) {
+        if (!isPgError(error) || error.code !== UNIQUE_VIOLATION) {
+            return new Response(null, { status: 500 });
+        }
     }
 
     return new Response(null, { status: 204 });
@@ -34,3 +37,6 @@ const isValidEmail = (email: string): boolean => {
     // Check if the email matches the regular expression
     return emailRegex.test(email.toLowerCase());
 };
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const isPgError = (error: any): error is { code: string } => 'code' in error;

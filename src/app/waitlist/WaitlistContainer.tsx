@@ -1,19 +1,22 @@
-import { Button } from './Button';
-import { Heading } from './Heading';
-import { Text } from './Text';
-import { TextField } from './TextField';
+'use client';
+
+import { useState } from 'react';
+import { Heading } from '../components/Heading';
+import { Text } from '../components/Text';
+import { SignUpForm } from './SignUpForm';
 import {
     onDesktopFirstColumn,
     onDesktopSecondColumn,
     onDesktopSpanTwoRows,
-    flexDirectionColumn,
     gridOnDesktopTwoColumns,
     onDesktopRotate45Deg,
     alignSelfEnd,
-} from './Waitlist.css';
+} from './WaitlistContainer.css';
 import Image from 'next/image';
 
 export const Waitlist = () => {
+    const [loading, setLoading] = useState(false);
+
     return (
         <div className={gridOnDesktopTwoColumns}>
             <div className={[onDesktopFirstColumn, alignSelfEnd].join(' ')}>
@@ -43,18 +46,22 @@ export const Waitlist = () => {
                 width={212}
                 height={125}
             />
-            <div
-                className={[onDesktopSecondColumn, flexDirectionColumn].join(
-                    ' '
-                )}
-            >
-                <Heading>lista de espera</Heading>
-                <Text>
-                    Suscribite para más información y se de las primeras
-                    personas en <b>ondda</b>.
-                </Text>
-                <TextField />
-                <Button />
+            <div className={[onDesktopSecondColumn].join(' ')}>
+                <SignUpForm
+                    loading={loading}
+                    handleSignUp={(email) => {
+                        setLoading(true);
+
+                        const putRequest = new Request(
+                            `/api/v0/waitlist-subscribers/${email}`,
+                            { method: 'PUT' }
+                        );
+                        fetch(putRequest)
+                            .catch()
+                            .then()
+                            .finally(() => setLoading(false));
+                    }}
+                />
             </div>
         </div>
     );

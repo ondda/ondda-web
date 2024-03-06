@@ -1,5 +1,5 @@
 import { Logo } from './components/Logo';
-import { Waitlist } from './components/Waitlist';
+import { Waitlist } from './waitlist/WaitlistContainer';
 import { main } from './page.css';
 
 export default function Home() {

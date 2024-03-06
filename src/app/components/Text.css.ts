@@ -5,6 +5,7 @@ import { globalStyle, style } from '@vanilla-extract/css';
 export const neoText = style({
     margin: 0,
     fontFamily: globalVars.font.sans.family,
+    lineHeight: '2.4rem',
 });
 
 globalStyle(`${neoText} b`, {

@@ -36,8 +36,9 @@ export const Waitlist = () => {
             />
             <div className={onDesktopFirstColumn}>
                 <Text>
-                    Con <b>ondda</b> vas a poder comunicarte con gente a tu
-                    alrededor sin necesidad de estar conectado a internet.
+                    Con <b>ondda</b> vas a poder comunicarte y consumir
+                    servicios a tu alrededor sin necesidad de una conexión a
+                    internet.
                 </Text>
             </div>
             <Image

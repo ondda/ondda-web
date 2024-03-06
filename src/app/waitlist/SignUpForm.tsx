@@ -42,7 +42,7 @@ export const SignUpForm = (props: SignUpFormProps) => {
 
             {successMessage && (
                 <Alert tone="positive">
-                    <Text tone="positive" alignment="left">
+                    <Text tone="positive" weight="bold" alignment="left">
                         {successMessage}
                     </Text>
                 </Alert>
@@ -50,7 +50,7 @@ export const SignUpForm = (props: SignUpFormProps) => {
 
             {errorMessage && (
                 <Alert tone="critical">
-                    <Text tone="critical" alignment="left">
+                    <Text tone="critical" weight="bold" alignment="left">
                         {errorMessage}
                     </Text>
                 </Alert>

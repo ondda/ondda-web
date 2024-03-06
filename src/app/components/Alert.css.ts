@@ -27,5 +27,5 @@ export const flexDirectionRow = style({
 });
 
 export const paddingTopSmall = style({
-    paddingTop: '0.8rem',
+    paddingTop: '0.4rem',
 });

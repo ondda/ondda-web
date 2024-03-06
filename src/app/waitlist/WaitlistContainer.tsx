@@ -11,11 +11,14 @@ import {
     gridOnDesktopTwoColumns,
     onDesktopRotate45Deg,
     alignSelfEnd,
+    onDesktopPaddintTopMedium,
 } from './WaitlistContainer.css';
 import Image from 'next/image';
 
 export const Waitlist = () => {
     const [loading, setLoading] = useState(false);
+    const [errorMessage, setErrorMessage] = useState<string | null>(null);
+    const [successMessage, setSuccessMessage] = useState<string | null>(null);
 
     return (
         <div className={gridOnDesktopTwoColumns}>
@@ -38,9 +41,11 @@ export const Waitlist = () => {
                 </Text>
             </div>
             <Image
-                className={[onDesktopFirstColumn, onDesktopRotate45Deg].join(
-                    ' '
-                )}
+                className={[
+                    onDesktopFirstColumn,
+                    onDesktopRotate45Deg,
+                    onDesktopPaddintTopMedium,
+                ].join(' ')}
                 src={'star.svg'}
                 alt={'star drawing'}
                 width={212}
@@ -49,6 +54,8 @@ export const Waitlist = () => {
             <div className={[onDesktopSecondColumn].join(' ')}>
                 <SignUpForm
                     loading={loading}
+                    errorMessage={errorMessage ?? undefined}
+                    successMessage={successMessage ?? undefined}
                     handleSignUp={(email) => {
                         setLoading(true);
 
@@ -56,9 +63,29 @@ export const Waitlist = () => {
                             `/api/v0/waitlist-subscribers/${email}`,
                             { method: 'PUT' }
                         );
+
                         fetch(putRequest)
-                            .catch()
-                            .then()
+                            .then((response) => {
+                                if (
+                                    response.status >= 200 &&
+                                    response.status < 300
+                                ) {
+                                    setErrorMessage(null);
+                                    setSuccessMessage('¡listo! te agendamos');
+                                } else if (response.status === 400) {
+                                    throw new Error('email inválido');
+                                } else {
+                                    throw new Error(
+                                        'oops, algo falló ¿podrías intentar de nuevo?'
+                                    );
+                                }
+                            })
+                            .catch((error) => {
+                                if (error instanceof Error) {
+                                    setSuccessMessage(null);
+                                    setErrorMessage(error.message);
+                                }
+                            })
                             .finally(() => setLoading(false));
                     }}
                 />

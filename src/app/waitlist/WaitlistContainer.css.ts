@@ -11,7 +11,7 @@ export const gridOnDesktopTwoColumns = style({
 });
 
 globalStyle(`${gridOnDesktopTwoColumns} > img`, {
-    margin: 'auto',
+    marginInline: 'auto',
 });
 
 export const onDesktopFirstColumn = style({
@@ -42,6 +42,14 @@ export const onDesktopRotate45Deg = style({
     '@media': {
         'only screen and (min-width: 768px)': {
             rotate: '45deg',
+        },
+    },
+});
+
+export const onDesktopPaddintTopMedium = style({
+    '@media': {
+        'only screen and (min-width: 768px)': {
+            paddingTop: '3.2rem',
         },
     },
 });

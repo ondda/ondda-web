@@ -27,7 +27,7 @@ export const SignUpForm = (props: SignUpFormProps) => {
         <div className={flexDirectionColumn}>
             <Heading>lista de espera</Heading>
             <Text>
-                Suscribite para más información y se de las primeras personas en{' '}
+                Suscribite para más información y sé de las primeras personas en{' '}
                 <b>ondda</b>.
             </Text>
             <TextField ref={emailInputRef} />

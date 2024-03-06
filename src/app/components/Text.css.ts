@@ -11,17 +11,16 @@ globalStyle(`${neoText} b`, {
     fontWeight: 500,
 });
 
-const neutralTone = style({
-    color: globalVars.color.gray,
-});
-
-const positiveTone = style({
-    color: globalVars.color.darkGreen,
-});
-
 export const colorTones: { [K in ColorTone]: string } = {
-    positive: positiveTone,
-    neutral: neutralTone,
+    positive: style({
+        color: globalVars.color.darkGreen,
+    }),
+    neutral: style({
+        color: globalVars.color.gray,
+    }),
+    critical: style({
+        color: globalVars.color.pink,
+    }),
 };
 
 const normalWeight = style({

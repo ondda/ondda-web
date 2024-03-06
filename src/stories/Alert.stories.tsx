@@ -11,13 +11,23 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-// More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const Success: Story = {
+export const Positive: Story = {
     args: {
         tone: 'positive',
         children: (
             <Text tone="positive" weight="bold" alignment="left">
                 ¡listo! te agendamos
+            </Text>
+        ),
+    },
+};
+
+export const Critical: Story = {
+    args: {
+        tone: 'critical',
+        children: (
+            <Text tone="critical" weight="bold" alignment="left">
+                email inválido
             </Text>
         ),
     },

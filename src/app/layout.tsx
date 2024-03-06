@@ -1,8 +1,10 @@
 import type { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
     title: 'ondda',
     description: 'conexión fuera de línea',
+    metadataBase: new URL('https://ondda.io'),
 };
 
 export default function RootLayout({
@@ -12,7 +14,10 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body>{children}</body>
+            <body>
+                {children}
+                <Analytics />
+            </body>
         </html>
     );
 }

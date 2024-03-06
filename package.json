@@ -12,6 +12,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.2.2",
     "next": "14.1.0",
     "pg": "^8.11.3",
     "react": "^18",

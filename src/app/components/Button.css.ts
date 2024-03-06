@@ -1,9 +1,9 @@
 import { style } from '@vanilla-extract/css';
 import { globalVars } from '../theme/globals.css';
-import { roundedBorder, addShadowHiddenOn } from '../theme/common.css';
+import { roundedGrayBorder, addShadowHiddenOn } from '../theme/common.css';
 
 export const neoButton = style([
-    roundedBorder,
+    roundedGrayBorder,
     addShadowHiddenOn('active'),
     {
         // font

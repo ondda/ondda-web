@@ -17,6 +17,8 @@ export const globalVars = createGlobalTheme(':root', {
         white: '#FEFEFE',
         gray: '#2D313B',
         lightGray: '#2D313B40',
+        darkGreen: '#008142',
+        lightGreen: '#C6F7DF',
     },
     font: {
         sans: {

@@ -10,3 +10,7 @@ export const main = style({
     marginInline: 'auto',
     rowGap: '1.6rem',
 });
+
+export const footerSpacing = style({
+    height: '9.6rem',
+});

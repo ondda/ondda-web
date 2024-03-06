@@ -1,12 +1,13 @@
 import { Logo } from './components/Logo';
 import { Waitlist } from './waitlist/WaitlistContainer';
-import { main } from './page.css';
+import { footerSpacing, main } from './page.css';
 
 export default function Home() {
     return (
         <main className={main}>
             <Logo />
             <Waitlist />
+            <div className={footerSpacing} />
         </main>
     );
 }

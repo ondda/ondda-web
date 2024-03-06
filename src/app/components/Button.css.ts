@@ -1,10 +1,6 @@
 import { style } from '@vanilla-extract/css';
 import { globalVars } from '../theme/globals.css';
-import {
-    roundedGrayBorder,
-    addShadowHiddenOn,
-    shadow,
-} from '../theme/common.css';
+import { roundedGrayBorder, addShadowHiddenOn } from '../theme/common.css';
 
 export const neoButton = style([
     roundedGrayBorder,
@@ -26,8 +22,9 @@ export const neoButton = style([
 ]);
 
 export const disabledNeoButton = style([
-    roundedGrayBorder,
     {
+        borderRadius: 8,
+        border: `3px solid ${globalVars.color.veryLightPink}`,
         // font
         fontSize: '2.2rem',
         fontWeight: 600,

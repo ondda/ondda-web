@@ -1,4 +1,4 @@
-import { globalVars } from '../../app/theme/globals.css';
+import { globalVars } from '../theme/globals.css';
 import { style } from '@vanilla-extract/css';
 
 export const logoDisplay = style({

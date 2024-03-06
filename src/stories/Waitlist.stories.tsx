@@ -1,4 +1,4 @@
-import { Waitlist } from '../app/components/Waitlist';
+import { Waitlist } from '../app/waitlist/WaitlistContainer';
 import type { Meta, StoryObj } from '@storybook/react';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export

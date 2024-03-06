@@ -14,12 +14,6 @@ globalStyle(`${gridOnDesktopTwoColumns} > img`, {
     margin: 'auto',
 });
 
-export const flexDirectionColumn = style({
-    display: 'flex',
-    flexDirection: 'column',
-    rowGap: '3.2rem',
-});
-
 export const onDesktopFirstColumn = style({
     '@media': {
         'only screen and (min-width: 768px)': {

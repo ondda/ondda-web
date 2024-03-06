@@ -2,7 +2,7 @@ import { globalVars } from './globals.css';
 import { style } from '@vanilla-extract/css';
 
 const shadow = style({
-    boxShadow: '3px 4px 1px rgba(0, 0, 0, 0.25)',
+    boxShadow: '3px 4px 0 rgba(0, 0, 0, 0.25)',
 });
 
 const shadowNotActive = style([
@@ -28,7 +28,11 @@ const shadowNoFocus = style([
 export const addShadowHiddenOn = (selector: 'active' | 'focus') =>
     selector === 'active' ? shadowNotActive : shadowNoFocus;
 
-export const roundedBorder = style({
+export const rounded = style({
+    borderRadius: 8,
+});
+
+export const roundedGrayBorder = style({
     border: `3px solid ${globalVars.color.gray}`,
     borderRadius: 8,
 });

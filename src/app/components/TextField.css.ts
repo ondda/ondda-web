@@ -1,9 +1,9 @@
-import { roundedBorder, addShadowHiddenOn } from '../theme/common.css';
+import { roundedGrayBorder, addShadowHiddenOn } from '../theme/common.css';
 import { globalVars } from '../theme/globals.css';
 import { style } from '@vanilla-extract/css';
 
 export const neoTextField = style([
-    roundedBorder,
+    roundedGrayBorder,
     addShadowHiddenOn('focus'),
     {
         // font

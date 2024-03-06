@@ -1,6 +1,10 @@
 import { style } from '@vanilla-extract/css';
 import { globalVars } from '../theme/globals.css';
-import { roundedGrayBorder, addShadowHiddenOn } from '../theme/common.css';
+import {
+    roundedGrayBorder,
+    addShadowHiddenOn,
+    shadow,
+} from '../theme/common.css';
 
 export const neoButton = style([
     roundedGrayBorder,
@@ -18,5 +22,21 @@ export const neoButton = style([
         ':hover': {
             backgroundColor: globalVars.color.lightPink,
         },
+    },
+]);
+
+export const disabledNeoButton = style([
+    roundedGrayBorder,
+    {
+        // font
+        fontSize: '2.2rem',
+        fontWeight: 600,
+        fontFamily: globalVars.font.sans.family,
+        backgroundColor: globalVars.color.veryLightPink,
+        color: globalVars.color.lighterPink,
+        cursor: 'auto',
+        padding: '1.2rem 0.8rem',
+        translate: '3px 3px',
+        transition: globalVars.animation.transition,
     },
 ]);

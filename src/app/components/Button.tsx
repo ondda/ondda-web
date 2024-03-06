@@ -1,5 +1,18 @@
-import { neoButton } from './Button.css';
+import { disabledNeoButton, neoButton } from './Button.css';
 
-export const Button = () => {
-    return <button className={neoButton}>unirme</button>;
+type ButtonProps = {
+    disabled?: boolean;
+};
+
+export const Button = (props: ButtonProps) => {
+    const { disabled = false } = props;
+
+    return (
+        <button
+            className={disabled ? disabledNeoButton : neoButton}
+            disabled={disabled}
+        >
+            unirme
+        </button>
+    );
 };

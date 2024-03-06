@@ -14,6 +14,7 @@ export const globalVars = createGlobalTheme(':root', {
     color: {
         pink: '#EA3788',
         lightPink: '#FD4799',
+        lighterPink: '#EE9AC0',
         veryLightPink: '#FAD2E4',
         white: '#FEFEFE',
         gray: '#2D313B',

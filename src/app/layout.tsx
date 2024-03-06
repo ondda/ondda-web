@@ -4,6 +4,7 @@ import { Analytics } from '@vercel/analytics/react';
 export const metadata: Metadata = {
     title: 'ondda',
     description: 'conexión fuera de línea',
+    metadataBase: new URL('https://ondda.io'),
 };
 
 export default function RootLayout({

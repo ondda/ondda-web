@@ -1,6 +1,6 @@
 import { Heading } from '@app/components/Heading';
 import { Logo } from '../../components/Logo';
-import { main } from '../../page.css';
+import { main, footerSpacing } from '../../page.css';
 import { Text } from '@app/components/Text';
 import { SubHeading } from '@app/components/SubHeading';
 import { Title } from '@app/components/Title';
@@ -52,8 +52,8 @@ export default function PrivacyPolicyPage() {
             </Text>
             <Text alignment="left">
                 Actualmente se brindan dos opciones: visible y oculto. El estado
-                visible transmite el identificador mientras que el oculto la
-                detiene.
+                visible transmite el identificador y el oculto desactiva su
+                transmisión.
             </Text>
 
             <SubHeading>Identificador</SubHeading>
@@ -71,7 +71,7 @@ export default function PrivacyPolicyPage() {
             <SubHeading>Nombre de usuario</SubHeading>
             <Text alignment="left">
                 Nombre corto utilizado para acompañar la identificación visual
-                provista por el avatar. Este nombre no es único - varios
+                provista por el avatar. Este nombre no es único &mdash; varios
                 usuarios pueden compartir el mismo nombre, la identidad queda
                 determinada por el avatar.
             </Text>
@@ -82,8 +82,8 @@ export default function PrivacyPolicyPage() {
                 Faro utiliza la señal Bluetooth de los dispositivos cercanos
                 para poder localizar a otros usuarios. Todo dispositivo visible
                 podrá ser detectado por otros dispositivos cercanos. En tal
-                caso, la información transmitida se encuentra limitada a:
-                avatar, nombre de usuario e intensidad de señal.
+                caso, la información transmitida se encuentra limitada a lo
+                siguiente: avatar, nombre de usuario e intensidad de señal.
             </Text>
 
             <Text alignment="left">
@@ -97,16 +97,16 @@ export default function PrivacyPolicyPage() {
             <Heading>Permisos de ubicación</Heading>
 
             <Text alignment="left">
-                En Android la aplicación solicita el permiso de ubicación. Esto
-                se debe únicamente a un requisito del sistema operativo por el
-                hecho de que Bluetooth Low Energy puede utilizarse para detectar
-                proximidad con otro dispositivo. Sin embargo, la aplicación
-                jamás utilizará el GPS del dispositivo para compartir ubicación.
+                En Android la aplicación solicita el permiso de ubicación. Este
+                es un requisito del sistema operativo dado que Bluetooth Low
+                Energy puede detectar la proximidad de otro dispositivo.
             </Text>
 
             <Text alignment="left">
-                Faro no accede, almacena ni transmite coordenadas de ubicación,
-                ni en primer plano ni en segundo plano.
+                Faro jamás utilizará el GPS del dispositivo para compartir u
+                obtener la ubicación de sus usuarios. La aplicación no accede,
+                almacena ni transmite coordenadas de ubicación, ni en primer
+                plano ni en segundo plano.
             </Text>
 
             <Heading>Almacenamiento local</Heading>
@@ -115,9 +115,9 @@ export default function PrivacyPolicyPage() {
                 La cuenta del usuario será almacenada únicamente en el
                 dispositivo donde se encuentra instalada la aplicación. En caso
                 de desinstalar la misma, esta información se eliminará por
-                completo. Dado que Faro no utiliza servidores, por lo pronto no
-                existe la posibilidad de recuperar cuentas o datos en un
-                dispositivo nuevo o tras una reinstalación.
+                completo. Dado que Faro no utiliza servidores, no existe la
+                posibilidad de recuperar cuentas o datos en un dispositivo nuevo
+                o tras una reinstalación.
             </Text>
 
             <Text alignment="left">
@@ -128,8 +128,8 @@ export default function PrivacyPolicyPage() {
 
             <Text alignment="left">
                 El registro de proximidad de usuarios cercanos es efímero. El
-                mismo se almacena mientras la aplicación se encuentra abierta o
-                en segundo plano. En cuanto la misma es cerrada por el usuario o
+                mismo se almacena mientras la aplicación se encuentra en primer
+                o en segundo plano. Cuando la misma es detenida por el usuario o
                 el sistema operativo, dicha información se pierde.
             </Text>
 
@@ -150,6 +150,7 @@ export default function PrivacyPolicyPage() {
                 </a>
                 .
             </Text>
+            <div className={footerSpacing} />
         </main>
     );
 }

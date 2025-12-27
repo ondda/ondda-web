@@ -9,9 +9,9 @@ const pool = new Pool({
 
 export async function PUT(
     _request: Request,
-    { params }: { params: { email: string } }
+    { params }: { params: Promise<{ email: string }> }
 ) {
-    const { email } = params;
+    const { email } = await params;
 
     if (!isValidEmail(email)) {
         return new Response('Invalid email', { status: 400 });

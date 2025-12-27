@@ -10,10 +10,13 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Primary: Story = {};
+export const Primary: Story = {
+    args: { onClick: () => alert('Button clicked!') },
+};
 
 export const Disabled: Story = {
     args: {
+        onClick: () => alert('Button clicked!'),
         disabled: true,
     },
 };
